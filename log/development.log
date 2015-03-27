@@ -3563,3 +3563,322 @@ Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 
 
 
 Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-27 16:12:58 -0700
+
+
+Started GET "/home" for ::1 at 2015-03-27 16:17:43 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 586ms (Views: 574.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6f6b160daa692915b9c8932f1ee13b5e.css?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/custom-c785c16814930a48994a8163a206b6dd.css?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-27 16:17:44 -0700
+
+
+Started GET "/" for ::1 at 2015-03-27 16:18:29 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 479ms (Views: 476.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6f6b160daa692915b9c8932f1ee13b5e.css?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/custom-c785c16814930a48994a8163a206b6dd.css?body=1" for ::1 at 2015-03-27 16:18:29 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-27 16:18:30 -0700
+
+
+Started GET "/" for ::1 at 2015-03-27 16:19:17 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 192ms
+
+ActionView::Template::Error (Missing partial layouts/_nagivation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Michael/Desktop/my-recipes-app/app/views"
+):
+     9: </head>
+    10: <body>
+    11: 
+    12:   <%= render 'layouts/nagivation' %>
+    13: 
+    14:   <div class="container">
+    15:     <%= yield %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1767135998876583400_70293365730960'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (27.1ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (58.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-27 16:20:57 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 421ms
+
+ActionView::Template::Error (Missing partial layouts/_nagivation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Michael/Desktop/my-recipes-app/app/views"
+):
+     9: </head>
+    10: <body>
+    11: 
+    12:   <%= render 'layouts/nagivation' %>
+    13: 
+    14:   <div class="container">
+    15:     <%= yield %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1767135998876583400_70293365730960'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-27 16:21:35 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/application-6f6b160daa692915b9c8932f1ee13b5e.css?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/custom-c785c16814930a48994a8163a206b6dd.css?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-27 16:21:35 -0700
+
+
+Started GET "/" for ::1 at 2015-03-27 16:22:14 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 206ms (Views: 205.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6f6b160daa692915b9c8932f1ee13b5e.css?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/custom-c785c16814930a48994a8163a206b6dd.css?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-27 16:22:14 -0700
