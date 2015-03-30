@@ -3970,3 +3970,35 @@ DEPRECATION WARNING: `#timestamp` was called without specifying an option for `n
             WHERE name='index_comments_on_article_id' AND type='index'
 [0m
   [1m[36mChef Load (2.3ms)[0m  [1mSELECT "chefs".* FROM "chefs"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddChefIdToRecipes (20150330184002)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "recipes" ADD "chef_id" integer[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150330184002"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[36mChef Load (1.2ms)[0m  [1mSELECT "chefs".* FROM "chefs"[0m
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mChef Exists (0.6ms)[0m  SELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER('michael@example.com') LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "chefs" ("chefname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["chefname", "michael"], ["email", "michael@example.com"], ["created_at", "2015-03-30 18:43:27.591589"], ["updated_at", "2015-03-30 18:43:27.591589"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mChef Load (0.3ms)[0m  [1mSELECT  "chefs".* FROM "chefs"  ORDER BY "chefs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "recipes" ("name", "summary", "description", "chef_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "veggie stay"], ["summary", "best veggie dish evar"], ["description", "cut veggies, cook veggies, eat veggies"], ["chef_id", 1], ["created_at", "2015-03-30 18:46:30.499511"], ["updated_at", "2015-03-30 18:46:30.499511"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."id" ASC LIMIT 1
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."id" ASC LIMIT 1[0m
+  [1m[35mChef Load (0.3ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mChef Load (2.5ms)[0m  [1mSELECT "chefs".* FROM "chefs"[0m
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mChef Exists (0.3ms)[0m  SELECT  1 AS one FROM "chefs" WHERE LOWER("chefs"."email") = LOWER('michael@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
