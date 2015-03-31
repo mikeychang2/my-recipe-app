@@ -13813,3 +13813,934 @@ Processing by RecipesController#edit as HTML
   Rendered layouts/_messages.html.erb (0.2ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 107ms (Views: 105.6ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddPictureToRecipes (20150331002906)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mALTER TABLE "recipes" ADD "picture" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150331002906"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 17:53:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#new as HTML
+Completed 500 Internal Server Error in 18ms
+
+NameError (uninitialized constant Recipe::PictureUploader):
+  app/models/recipe.rb:7:in `<class:Recipe>'
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:11:in `new'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.8ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (27.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (62.7ms)
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 17:53:19 -0700
+Processing by RecipesController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant Recipe::PictureUploader):
+  app/models/recipe.rb:7:in `<class:Recipe>'
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:11:in `new'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.1ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (33.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-30 17:54:51 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 132ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2015-03-30 17:54:53 -0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 91ms
+
+NameError (uninitialized constant Recipe::PictureUploader):
+  app/models/recipe.rb:7:in `<class:Recipe>'
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:3:in `index'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (61.0ms)
+
+
+Started GET "/recipes" for ::1 at 2015-03-30 17:54:53 -0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant Recipe::PictureUploader):
+  app/models/recipe.rb:7:in `<class:Recipe>'
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:3:in `index'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (113.5ms)
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 17:54:56 -0700
+Processing by RecipesController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant Recipe::PictureUploader):
+  app/models/recipe.rb:7:in `<class:Recipe>'
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:11:in `new'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 17:54:56 -0700
+Processing by RecipesController#new as HTML
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant Recipe::PictureUploader):
+  app/models/recipe.rb:7:in `<class:Recipe>'
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:11:in `new'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (45.4ms)
+
+
+Started GET "/recipes" for ::1 at 2015-03-30 17:59:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.6ms)
+  [1m[35mRecipe Load (0.6ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mChef Load (0.6ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered recipes/index.html.erb within layouts/application (69.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 654ms (Views: 576.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application-5d36c62889486d1f326abb78ec7c5019.css?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/custom-4cd3156cd7ea1d6159d7a8a5db8b554b.css?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 17:59:09 -0700
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 17:59:11 -0700
+Processing by RecipesController#new as HTML
+  Rendered shared/_page_title.html.erb (0.4ms)
+  Rendered shared/_errors.html.erb (4.2ms)
+  Rendered recipes/_form.html.erb (21.4ms)
+  Rendered recipes/new.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 177ms (Views: 176.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-4cd3156cd7ea1d6159d7a8a5db8b554b.css?body=1" for ::1 at 2015-03-30 18:12:55 -0700
+
+
+Started GET "/assets/application-5d36c62889486d1f326abb78ec7c5019.css?body=1" for ::1 at 2015-03-30 18:12:55 -0700
+  [1m[36mRecipe Load (4.1ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 18:37:49 -0700
+Processing by RecipesController#new as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered recipes/_form.html.erb (6.4ms)
+  Rendered recipes/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3871ms (Views: 3612.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 18:37:54 -0700
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 18:39:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#new as HTML
+  Rendered shared/_page_title.html.erb (0.8ms)
+  Rendered shared/_errors.html.erb (4.9ms)
+  Rendered recipes/_form.html.erb (37.2ms)
+  Rendered recipes/new.html.erb within layouts/application (98.9ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 565ms (Views: 533.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 18:39:46 -0700
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:40:43 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkpuwYNZhY4bkLpsB/wF3NKfKZVlLMC72ElrrWKlzyu9R2mB4QSAhMP3t7OS33Y4yUflKT4RzHQKckVoxX3qug==", "recipe"=>{"name"=>"Hamburgers", "summary"=>"BEST HAMBURGERS EVAR", "description"=>"1) Go to store\r\n2) Buy hamburger\r\n3) Eat hamburger", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f8609aad728 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37891-1tpi09s.jpg>, @original_filename="IMG_0748.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0748.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 41ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f860995f718 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f860995e318 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f860998f350 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:42:09 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkpuwYNZhY4bkLpsB/wF3NKfKZVlLMC72ElrrWKlzyu9R2mB4QSAhMP3t7OS33Y4yUflKT4RzHQKckVoxX3qug==", "recipe"=>{"name"=>"Hamburgers", "summary"=>"BEST HAMBURGERS EVAR", "description"=>"1) Go to store\r\n2) Buy hamburger\r\n3) Eat hamburger", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f860948bbb0 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37891-16zqw87.jpg>, @original_filename="IMG_0748.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0748.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 102ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.2ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f860995f718 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f860995e318 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f860998f350 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:44:11 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkpuwYNZhY4bkLpsB/wF3NKfKZVlLMC72ElrrWKlzyu9R2mB4QSAhMP3t7OS33Y4yUflKT4RzHQKckVoxX3qug==", "recipe"=>{"name"=>"Hamburgers", "summary"=>"BEST HAMBURGERS EVAR", "description"=>"1) Go to store\r\n2) Buy hamburger\r\n3) Eat hamburger", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f8609c2d1c0 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37891-10mutzf.JPG>, @original_filename="IMG_0164.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0164.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 70ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f860995f718 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f860995e318 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f860998f350 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:47:47 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkpuwYNZhY4bkLpsB/wF3NKfKZVlLMC72ElrrWKlzyu9R2mB4QSAhMP3t7OS33Y4yUflKT4RzHQKckVoxX3qug==", "recipe"=>{"name"=>"Hamburgers", "summary"=>"BEST HAMBURGERS EVAR", "description"=>"1) Go to store\r\n2) Buy hamburger\r\n3) Eat hamburger", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f8609c16060 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37891-f6vohn.JPG>, @original_filename="IMG_0164.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0164.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 106ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f860995f718 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f860995e318 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f860998f350 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-03-30 18:48:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 510ms (Views: 499.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 18:48:54 -0700
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 18:48:56 -0700
+Processing by RecipesController#new as HTML
+  Rendered shared/_page_title.html.erb (0.5ms)
+  Rendered shared/_errors.html.erb (4.0ms)
+  Rendered recipes/_form.html.erb (81.9ms)
+  Rendered recipes/new.html.erb within layouts/application (87.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 308ms (Views: 289.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:49:08 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lzvHRKf0/Exj+LyD91RRJjZIKZfAOf10dGwHdw6BuPMwNsAExan5RrufsVxidyLCLZDlK5sE8bumVymyqVmdYg==", "recipe"=>{"name"=>"fdjskfdsjflkds", "summary"=>"jfkdsjfklsdjfkl", "description"=>"fdsjklfjs\r\njfdsklfjds\r\njfdksfjkldsjfds", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f92942050c0 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-pmqhr0.JPG>, @original_filename="IMG_0164.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0164.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 88ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.5ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f92951b2d10 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f92951bb370 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f92951f1cb8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:50:12 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lzvHRKf0/Exj+LyD91RRJjZIKZfAOf10dGwHdw6BuPMwNsAExan5RrufsVxidyLCLZDlK5sE8bumVymyqVmdYg==", "recipe"=>{"name"=>"fdjskfdsjflkds", "summary"=>"jfkdsjfklsdjfkl", "description"=>"fdsjklfjs\r\njfdsklfjds\r\njfdksfjkldsjfds", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f9294fd4a48 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-bjxpa5.JPG>, @original_filename="IMG_0164.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0164.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 108ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (73.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f92951b2d10 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f92951bb370 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f92951f1cb8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/recipes/new" for ::1 at 2015-03-30 18:50:16 -0700
+Processing by RecipesController#new as HTML
+  Rendered shared/_page_title.html.erb (0.6ms)
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered recipes/_form.html.erb (8.2ms)
+  Rendered recipes/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 225ms (Views: 223.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 18:50:17 -0700
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:50:26 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HlxIzpFAQDplUnmZXgE0y1GoPO3HaSr9lCSc4bpm22q5UU+O8x1FML01dEbLIkcvSnDwUZxUJjJGH7IkHb7++w==", "recipe"=>{"name"=>"dsfsdf", "summary"=>"fdsfdsfds", "description"=>"fdsfdsfdsfdsfdskfskdljf\r\njdskfjdlskf\r\njdskfjsdklfjdsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f9295d373e8 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-161yne.JPG>, @original_filename="IMG_0008.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0008.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 73ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f92951b2d10 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f92951bb370 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f92951f1cb8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 18:59:12 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HlxIzpFAQDplUnmZXgE0y1GoPO3HaSr9lCSc4bpm22q5UU+O8x1FML01dEbLIkcvSnDwUZxUJjJGH7IkHb7++w==", "recipe"=>{"name"=>"dsfsdf", "summary"=>"fdsfdsfds", "description"=>"fdsfdsfdsfdsfdskfskdljf\r\njdskfjdlskf\r\njdskfjsdklfjdsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f92980ead58 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-d93u6t.JPG>, @original_filename="IMG_0008.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0008.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+Completed 500 Internal Server Error in 312ms
+
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/recipes_controller.rb:15:in `create'
+
+
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Michael/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f92951b2d10 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f92951bb370 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f92951f1cb8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 19:04:21 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HlxIzpFAQDplUnmZXgE0y1GoPO3HaSr9lCSc4bpm22q5UU+O8x1FML01dEbLIkcvSnDwUZxUJjJGH7IkHb7++w==", "recipe"=>{"name"=>"dsfsdf", "summary"=>"fdsfdsfds", "description"=>"fdsfdsfdsfdsfdskfskdljf\r\njdskfjdlskf\r\njdskfjsdklfjdsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f92954f0888 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-1er5te2.JPG>, @original_filename="IMG_0008.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0008.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+  [1m[35mChef Load (1.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_page_title.html.erb (0.2ms)
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered recipes/_form.html.erb (5.4ms)
+  Rendered recipes/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 950ms (Views: 219.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 19:04:22 -0700
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 19:04:28 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TC5Ep5oCIA+v461kHcuzKKGciR8ubCVYa900Fw4UiZnrI0Pn+F8lBXeEoLuI6MDMukRFo3VRKZe55hrSqcysCA==", "recipe"=>{"name"=>"dsfsdf", "summary"=>"fdsfdsfds", "description"=>"fdsfdsfdsfdsfdskfskdljf\r\njdskfjdlskf\r\njdskfjsdklfjdsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f92983621d0 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-qg24pm.JPG>, @original_filename="IMG_0008.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0008.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+  [1m[36mChef Load (0.3ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_page_title.html.erb (0.1ms)
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered recipes/_form.html.erb (4.5ms)
+  Rendered recipes/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 504ms (Views: 180.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 19:04:29 -0700
+
+
+Started POST "/recipes" for ::1 at 2015-03-30 19:04:36 -0700
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U7V2jkokwgWh2rOXicAGrUSICIgNjymitwNp6TIxntf0uHHOKHnHD3m9vkgc43VJX1DENFayJW1lOEcslem7Rg==", "recipe"=>{"name"=>"dsfsdf", "summary"=>"fdsffdsfdsfds", "description"=>"fdsfdsfdsfdsfdskfskdljf\r\njdskfjdlskf\r\njdskfjsdklfjdsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f9294edec38 @tempfile=#<Tempfile:/var/folders/9p/4pvj_jh12md6cb8w7jq9ffmm0000gn/T/RackMultipart20150330-37984-hundjo.JPG>, @original_filename="IMG_0008.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[picture]\"; filename=\"IMG_0008.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Recipe"}
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "recipes" ("name", "summary", "description", "picture", "chef_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "dsfsdf"], ["summary", "fdsffdsfdsfds"], ["description", "fdsfdsfdsfdsfdskfskdljf\r\njdskfjdlskf\r\njdskfjsdklfjdsf"], ["picture", "IMG_0008.JPG"], ["chef_id", 2], ["created_at", "2015-03-31 02:04:37.276299"], ["updated_at", "2015-03-31 02:04:37.276299"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 384ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/recipes" for ::1 at 2015-03-30 19:04:37 -0700
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered recipes/index.html.erb within layouts/application (33.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 217ms (Views: 214.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-03-30 19:04:37 -0700
+
+
+Started GET "/recipes/11" for ::1 at 2015-03-30 19:04:42 -0700
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered recipes/show.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 190ms (Views: 187.7ms | ActiveRecord: 0.3ms)
