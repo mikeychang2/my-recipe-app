@@ -33959,3 +33959,339 @@ Processing by RecipesController#index as HTML
   Rendered layouts/_messages.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 231ms (Views: 229.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes" for ::1 at 2015-04-02 13:40:22 -0700
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.6ms)
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.8ms)[0m  SELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."updated_at" DESC LIMIT 4 OFFSET 0
+  [1m[36mChef Load (0.3ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 3]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (64.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 395ms (Views: 374.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-04-02 13:40:23 -0700
+
+
+Started GET "/chefs" for ::1 at 2015-04-02 13:40:30 -0700
+Processing by ChefsController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "chefs"[0m
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0
+  Rendered chefs/index.html.erb within layouts/application (6.1ms)
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 240ms (Views: 238.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/chefs" for ::1 at 2015-04-02 13:40:56 -0700
+Processing by ChefsController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "chefs"
+  [1m[36mChef Load (0.2ms)[0m  [1mSELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0[0m
+  Rendered chefs/index.html.erb within layouts/application (6.4ms)
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 202ms (Views: 200.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-0bc2b04d7d599cbb14c3dfbe960275a7.css?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/custom-4bf8c6b93316d93b606cffde0e01c7b2.css?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/affix-86647d01ace516e05ddf78d2b6e85e20.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/button-6b326d9b5034209f30109e77c264a190.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/alert-2a2796d28d7833f423ee421a3ad297bb.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/carousel-31dbb9c732fc2da02b8d5a97d9ae0047.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/collapse-624b0c6035c65b5be6ae581d8dc4e196.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-ce1bbc536745c41510513f7274f9897c.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/modal-77a0e72df31a788e4f6a3f28370eb69e.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-3892c697f57b7e7b9d5993044235a210.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/tab-6f45b70c6440bd0222c171dd7a926b5d.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/transition-264673896da1e31c3b865db964cd6592.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/popover-3dcfaa462d273d183ef52064ce120a5b.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-718496fb53635605964fb77613425c8d.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-830839b3b00123a30d090955aa74da5c.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/application-a22d10fc9ca1a3c4a4ab7fcc100139eb.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-02 13:40:56 -0700
+
+
+Started GET "/recipes" for ::1 at 2015-04-02 13:40:58 -0700
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."updated_at" DESC LIMIT 4 OFFSET 0
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 3]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (17.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 242ms (Views: 239.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-04-02 13:40:58 -0700
+
+
+Started GET "/chefs" for ::1 at 2015-04-02 13:40:59 -0700
+Processing by ChefsController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "chefs"[0m
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0
+  Rendered chefs/index.html.erb within layouts/application (7.6ms)
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 207ms (Views: 205.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for ::1 at 2015-04-02 13:40:59 -0700
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."updated_at" DESC LIMIT 4 OFFSET 0[0m
+  [1m[35mChef Load (0.3ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 3]]
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (17.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 282ms (Views: 279.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/chefs" for ::1 at 2015-04-02 13:41:12 -0700
+Processing by ChefsController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "chefs"
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0[0m
+  Rendered chefs/index.html.erb within layouts/application (4.4ms)
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 170.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2015-04-02 13:41:13 -0700
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."updated_at" DESC LIMIT 4 OFFSET 0
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 3]]
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (14.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 195ms (Views: 192.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/chefs" for ::1 at 2015-04-02 13:41:17 -0700
+Processing by ChefsController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "chefs"[0m
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0
+  Rendered chefs/index.html.erb within layouts/application (4.4ms)
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 231ms (Views: 229.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for ::1 at 2015-04-02 13:41:18 -0700
+Processing by RecipesController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "recipes"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  ORDER BY "recipes"."updated_at" DESC LIMIT 4 OFFSET 0[0m
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 3]]
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'  [["recipe_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'[0m  [["recipe_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 't'[0m  [["recipe_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."recipe_id" = ? AND "likes"."like" = 'f'  [["recipe_id", 1]]
+  Rendered recipes/index.html.erb within layouts/application (18.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 179ms (Views: 176.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/chefs" for ::1 at 2015-04-02 13:41:20 -0700
+Processing by ChefsController#index as HTML
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "chefs"
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0[0m
+  Rendered chefs/index.html.erb within layouts/application (4.4ms)
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 242ms (Views: 240.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/chefs?page=2" for ::1 at 2015-04-02 13:41:22 -0700
+Processing by ChefsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "chefs"[0m
+  [1m[35mChef Load (0.2ms)[0m  SELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0
+  Rendered chefs/index.html.erb within layouts/application (5.2ms)
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 184ms (Views: 183.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/chefs?page=2" for ::1 at 2015-04-02 13:41:24 -0700
+Processing by ChefsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendered shared/_page_title.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "chefs"
+  [1m[36mChef Load (0.1ms)[0m  [1mSELECT  "chefs".* FROM "chefs" LIMIT 3 OFFSET 0[0m
+  Rendered chefs/index.html.erb within layouts/application (4.8ms)
+  [1m[35mChef Load (0.1ms)[0m  SELECT  "chefs".* FROM "chefs" WHERE "chefs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 166.0ms | ActiveRecord: 0.4ms)
